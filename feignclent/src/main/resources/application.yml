@@ -1,0 +1,19 @@
+#端口
+server:
+  port: 8088
+#服务名称
+spring:
+  application:
+    name: feign-client
+  #consul的配置
+  cloud:
+      consul:
+        host: localhost
+        port: 8500
+        discovery:
+          serviceName: feign-client
+feign:
+  httpclient:
+    connection-timeout: 30000
+  hystrix:
+    enabled: true

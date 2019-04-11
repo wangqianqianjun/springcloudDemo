@@ -1,0 +1,12 @@
+#端口
+server:
+  port: 8074
+#服务名称
+spring:
+  application:
+    name: rabbitmq-test
+  rabbitmq:
+    port: 5672
+    host: localhost
+    username: wangqianjun
+    password: 12345
